@@ -1,7 +1,7 @@
 import React , {Component}from "react";
 
 import PropTypes from 'prop-types';
-import classes from "./Burgering.css";
+import classes from "./Burgering.module.css";
 
 class Burgering extends Component{
     render () {
@@ -15,8 +15,8 @@ class Burgering extends Component{
             case('bread-top'):     
                    ingredient= (
                     <div className={classes.BreadTop}>
-                        <div className={classes.seeds1}></div>
-                        <div className={classes.seeds2}></div>
+                        <div className={classes.Seeds1}></div>
+                        <div className={classes.Seeds2}></div>
                     </div>
                    );
                    break;
