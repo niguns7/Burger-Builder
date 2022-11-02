@@ -6,7 +6,6 @@ import classes from "./Layout.module.css";
 
 const Layout = (props) => (    
         <Auxl>
-            <div> Toolbar,slidebar,backdrop</div>
             <main className={classes.Content}>
                 {props.children}
             </main>
