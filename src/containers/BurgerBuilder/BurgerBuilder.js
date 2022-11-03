@@ -85,7 +85,7 @@ class BurgerBuilder extends Component {
         }
         return (
             <Auxl> 
-                <Modal show={this.state.purchasing}>
+                <Modal show={this.state.purchasing} modalclosed>
                     <OrderSummary ingredients={this.state.ingredients}/>
                 </Modal>
                 <Burger ingredients={this.state.ingredients}/>
