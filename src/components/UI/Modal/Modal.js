@@ -1,7 +1,11 @@
 import React from 'react';
 import classes from './Modal.module.css';
+import Auxl from '../../../hoc/Auxl'
+import Backdrop from './Backdrop/Backdrop';
 
 const Modal = (props) => (
+    <Auxl>
+        <Backdrop show={props.show} clicked={props.modalClosed}/>
     <div 
     className={classes.Modal} 
     style={{
@@ -11,6 +15,7 @@ const Modal = (props) => (
     >
         {props.children}
     </div>
+    </Auxl>
   );
 
 export default Modal;
