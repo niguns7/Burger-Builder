@@ -50,6 +50,7 @@ class BurgerBuilder extends Component {
         const newPrice = oldPrice + priceAddition;
         this.setState({totalPrice: newPrice, ingredients: updatedIngredients})
         this.updatePurchaseState(updatedIngredients);
+        console.log("clickedd")
     }
 
     removeIngredientHandler = (type) => {
