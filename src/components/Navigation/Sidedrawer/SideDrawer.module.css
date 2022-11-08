@@ -13,21 +13,20 @@
 }
 
 @media (min-width: 500px) {
-    .SideDrawer{
+    .SideDrawer {
         display: none;
     }
 }
 
-.Open{
-    transition: translateX(0);
+.Open {
+    transform: translateX(0);
 }
 
 .Close {
-    transition: translateX(-100%);
+    transform: translateX(-100%);
 }
 
 .Logo {
     height: 11%;
-    margin: 32px;
+    margin-bottom: 32px;
 }
-

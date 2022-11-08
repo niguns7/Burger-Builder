@@ -6,10 +6,15 @@ import Backdrop from "../../UI/Modal/Backdrop/Backdrop";
 import Auxl from "../../../hoc/Auxl"
 
 const SideDrawer = (props) => {
+    let attachedClasses = [classes.SideDrawer, classes.Close];
+    if (props.open) {
+        attachedClasses = [classes.SideDrawer, classes.Open]
+    }
+
     return(
         <Auxl>
-        <Backdrop show/> 
-        <div className={classes.SideDrawer}>
+        <Backdrop show={props.open} clicked={props.closed}/> 
+        <div className={attachedClasses.join(' ')}>
             <div className={classes.Logo}>
             <Logo />
             </div>
